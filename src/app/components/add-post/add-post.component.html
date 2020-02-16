@@ -1,0 +1,22 @@
+<form class="container" (ngSubmit)="handleAddPost()">
+  <input
+    type="text"
+    name="title"
+    [(ngModel)]="title"
+    class="form-control"
+    autocomplete="off"
+    placeholder="Enter Title"
+  />
+  <input
+    type="text"
+    name="body"
+    [(ngModel)]="body"
+    class="form-control mt-2 mb-4"
+    autocomplete="off"
+    placeholder="Enter Body"
+  />
+  <input 
+  type="submit" 
+  value="Add Post" 
+  class="btn btn-primary mb-5" />
+</form>

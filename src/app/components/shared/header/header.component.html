@@ -1,0 +1,19 @@
+<nav>
+    <a routerLink="/">Home</a>
+    <a routerLink="/about">About</a>
+</nav>
+
+<ul *ngFor="let cat of categories">
+    <li>
+        <a [routerLink]="cat.link">
+            {{ cat.title }}
+        </a>
+        <ul *ngIf="cat.subCats">
+            <li *ngFor="let subcat of cat.subCats">
+                <a [routerLink]="subcat.link">
+                    {{ subcat.title }}
+                </a>
+            </li>
+        </ul>
+    </li>
+</ul>

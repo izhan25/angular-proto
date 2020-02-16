@@ -1,0 +1,1 @@
+export const AppUrl: string = 'https://jsonplaceholder.typicode.com';
